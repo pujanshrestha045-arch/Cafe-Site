@@ -292,10 +292,19 @@
      margin-top: 5px;
  }
 
- .carpath {
+ .caranimation {
      display: flex;
      position: relative;
+     overflow: hidden;
+     padding-bottom: 10px;
  }
+    
+
+     @keyframes carmove {
+        0%{left:-20%}
+        100%{left:100%}
+     }
+ 
 
  .our-promise .bg {
      width: 100%;
@@ -306,6 +315,7 @@
      width: 300px;
      position: absolute;
      top: 40%;
+      animation: carmove 8s linear infinite;
  }
 
  .contact {
@@ -339,7 +349,7 @@
 
  .contact-info p {
      font-size: 1rem;
-     color: #666;
+     color: #111;
      line-height: 1.6;
  }
 
