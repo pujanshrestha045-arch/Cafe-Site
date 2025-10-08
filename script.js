@@ -1,6 +1,8 @@
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobileNav');
+document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
 
-hamburger.addEventListener('click',() => {
-    mobileNav.classList.toggle('active');
-});
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    });

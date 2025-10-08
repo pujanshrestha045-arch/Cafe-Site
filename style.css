@@ -8,33 +8,39 @@
      max-width: 1200px;
      margin: auto;
  }
+
  @media (min-width: 576px) {
-    .container{
-        max-width: 540px;
-    }
+     .container {
+         max-width: 540px;
+     }
  }
 
 
-@media (min-width: 768px) {
-    .container{
-        max-width: 720px;
-    }
-}
+ @media (min-width: 768px) {
+     .container {
+         max-width: 720px;
+     }
+ }
 
 
-@media (min-width: 992px) {.container{
-        max-width: 960px;
-    }}
+ @media (min-width: 992px) {
+     .container {
+         max-width: 960px;
+     }
+ }
 
 
-@media (min-width: 1200px) {.container{
-        max-width: 1140px;
-    }}
+ @media (min-width: 1200px) {
+     .container {
+         max-width: 1140px;
+     }
+ }
 
  .se {
      justify-content: space-evenly;
  }
-  .sb {
+
+ .sb {
      justify-content: space-between;
  }
 
@@ -70,36 +76,85 @@
  }
 
  .nav-left {
-    width: 40%;
+     width: 40%;
      justify-content: center;
      text-align: center;
  }
 
  .nav-right {
-    width: 40%;
+     width: 40%;
      justify-content: center;
      text-align: center;
  }
- .togglemenu{
-    font-size: 2rem;
+
+ .togglemenu {
+     font-size: 2rem;
  }
- .mobile-header{
-    margin-bottom: 20px;
-    min-width: 540px;
+
+ .mobile-header {
+     margin-bottom: 20px;
+     min-width: 540px;
  }
-.title{
-    font-size: 2rem;
+
+ .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 999;
 }
- .mobile-header,.hamburger,.mobile-nav{display: none; justify-content: space-between;}
-@media(max-width:752px){
-    .mobile-off{display: none;}
-    .mobile-header,.hamburger{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .togglemenu{align-items: right;}
+
+.mobile-nav.active {
+    display: flex;
 }
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+ .title {
+     font-size: 2rem;
+ }
+
+ .mobile-header,
+ .hamburger{
+     display: none;
+     justify-content: space-between;
+ }
+
+ @media(max-width:752px) {
+     .mobile-off {
+         display: none;
+     }
+
+     .mobile-header,
+     .hamburger {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+     }
+
+     .togglemenu {
+         align-items: flex-end;
+     }
+ }
 
  .nav-left ul,
  .nav-right ul {
@@ -197,8 +252,8 @@
 
  .services-grid {
      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-      justify-content: center;
+     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+     justify-content: center;
      align-items: center;
      text-align: center;
      padding: 0 20px;
@@ -206,7 +261,7 @@
  }
 
  .services-grid img {
-     width:30rem;
+     width: 30rem;
      padding: 20px;
  }
 
@@ -245,7 +300,7 @@
  }
 
  .our-mission {
-     background-image: url(https://cdn.pixabay.com/photo/2021/01/18/12/45/coffee-beans-5928036_1280.jpg);
+     background-image: url(img/missionbg.webp);
      background-position: center center;
      background-attachment: fixed;
      background-size: cover;
@@ -261,6 +316,7 @@
      max-width: 600px;
      margin: auto;
      color: #000000;
+     
  }
 
  .mission-details h4 {
@@ -298,24 +354,29 @@
      overflow: hidden;
      padding-bottom: 10px;
  }
-    
 
-     @keyframes carmove {
-        0%{left:-20%}
-        100%{left:100%}
+
+ @keyframes carmove {
+     0% {
+         left: -20%
      }
- 
+
+     100% {
+         left: 100%
+     }
+ }
+
 
  .our-promise .bg {
      width: 100%;
-    
+
  }
 
  .our-promise .car {
      width: 300px;
      position: absolute;
      top: 40%;
-      animation: carmove 8s linear infinite;
+     animation: carmove 8s linear infinite;
  }
 
  .contact {
@@ -323,9 +384,9 @@
      background-position: center center;
      background-attachment: fixed;
      background-size: cover;
-     
+
      display: flex;
-     
+
      align-items: center;
      justify-content: center;
  }
@@ -342,20 +403,17 @@
 
  .contact-info h2 {
      font-size: 2rem;
-     color: #333;
+     color:#F5F5DC;
      margin-bottom: 10px;
      text-align: center;
  }
 
  .contact-info p {
      font-size: 1rem;
-     color: #111;
+     color:#F5F5DC;
      line-height: 1.6;
  }
 
  .contact-details p {
      margin-bottom: 10px;
  }
-
-
- 
