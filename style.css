@@ -11,7 +11,7 @@
  @media (max-width: 576px) {
      .container {
          max-width: 540px;
-         
+         margin: auto;
      }
  }
 
@@ -19,7 +19,7 @@
  @media (min-width: 577px) and (max-width: 768px) {
      .container {
          max-width: 720px;
-         
+         margin: auto;
      }
  }
 
@@ -27,7 +27,7 @@
  @media (min-width: 769px) and (max-width: 992px) {
      .container {
          max-width: 960px;
-         
+         margin: auto;
      }
  }
 
@@ -35,7 +35,7 @@
  @media (min-width: 993px){
      .container {
          max-width: 1200px;
-         
+         margin: auto;
      }
  }
 
