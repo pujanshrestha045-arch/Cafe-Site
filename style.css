@@ -91,50 +91,51 @@
      font-size: 2rem;
  }
 
- .mobile-header {
+ /* .mobile-header {
      margin-bottom: 20px;
-     min-width: 540px;
- }
+     display: flex;
+     justify-content: space-between;      
+ } */
 
  .mobile-nav {
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 999;
-}
+     display: none;
+     flex-direction: column;
+     background-color: white;
+     width: 100%;
+     position: absolute;
+     top: 100px;
+     left: 0;
+     z-index: 999;
+ }
 
-.mobile-nav.active {
-    display: flex;
-}
+ .mobile-nav.active {
+     display: flex;
+ }
 
-.mobile-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+ .mobile-nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
 
-.mobile-nav ul li {
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
+ .mobile-nav ul li {
+     padding: 15px 20px;
+     border-bottom: 1px solid #ddd;
+     text-align: center;
+ }
 
-.mobile-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
+ .mobile-nav ul li a {
+     text-decoration: none;
+     color: #000;
+     font-weight: bold;
+ }
 
  .title {
      font-size: 2rem;
  }
 
  .mobile-header,
- .hamburger{
+ .hamburger {
      display: none;
      justify-content: space-between;
  }
@@ -144,11 +145,21 @@
          display: none;
      }
 
-     .mobile-header,
-     .hamburger {
+     .mobile-header {
          display: flex;
          align-items: center;
          justify-content: space-between;
+         width: 80%;
+     }
+
+     .mobile-header .logo {
+         width: 25%;
+     }
+
+     .mobile-header .hamburger {
+         display: flex;
+         width: 75%;
+         justify-content: right;
      }
 
      .togglemenu {
@@ -316,7 +327,7 @@
      max-width: 600px;
      margin: auto;
      color: #000000;
-     
+
  }
 
  .mission-details h4 {
@@ -403,14 +414,15 @@
 
  .contact-info h2 {
      font-size: 2rem;
-     color:#F5F5DC;
+     color: #FFFFFF;
      margin-bottom: 10px;
      text-align: center;
+
  }
 
  .contact-info p {
      font-size: 1rem;
-     color:#F5F5DC;
+     color: #FFFFFF;
      line-height: 1.6;
  }
 
