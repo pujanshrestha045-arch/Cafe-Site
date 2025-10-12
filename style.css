@@ -4,10 +4,14 @@
      box-sizing: border-box;
  }
 
+ html{scroll-behavior: smooth;}
+ body{overflow-x: hidden;}
+
  .container {
      width: 100%;
      padding: 0 10px;
      margin: auto;
+     
  }
 
  @media (min-width: 600px) {
@@ -225,7 +229,7 @@
 
  .contact-grid {
      display: grid;
-     grid-template-columns: repeat(autofit,minmax(140px, 1fr));
+     grid-template-columns: repeat(auto-fit,minmax(140px, 1fr));
      gap: 1rem;
      justify-content: center;
      width: 100%;
@@ -283,7 +287,7 @@
 
  .services-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
      gap: 2rem;
      justify-content: center;
      align-items: center;
