@@ -33,8 +33,8 @@
         </nav>
 
         <!-- Desktop nav (optional, show only on larger screens) -->
-        <div class="desktop-nav container flex se mobile-off">
-            <nav class="nav-left mobile-off">
+        <div class="desktop-nav container flex se hide-mobile">
+            <nav class="nav-left hide-mobile">
 
                 <ul class="flex se">
                     <li><a href="#">Our Services</a></li>
@@ -42,9 +42,9 @@
                 </ul>
             </nav>
 
-            <div class="logo mobile-off"><img src="img/logo.webp" alt=""></div>
+            <div class="logo hide-mobile"><img src="img/logo.webp" alt="CafeLogo"></div>
 
-            <nav class="nav-right mobile-off">
+            <nav class="nav-right hide-mobile">
                 <ul class="flex se">
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Book Now</a></li>
@@ -58,8 +58,8 @@
         <div class="container">
             <img src="img/logo.webp" alt="">
             <div class="contact-grid grid-layout">
-                <button class="cnct-btn"><a href="#">Call Now</a></button>
-                <button class="cnct-btn"><a href="#">Email Now</a></button>
+                <a class="cnct-btn" href="#">Call Now</a>
+                <a class="cnct-btn" href="#">Email Now</a>
             </div>
         </div>
     </section>
@@ -73,8 +73,8 @@
     <section class="services">
         <div class="container">
             <div class="services-grid">
-                <div class="services-grid-left">
-                    <img src="img/popupcafe.webp" alt="">
+                <div class="service-item">
+                    <img src="img/popupcafe.webp" alt="Pop-up cafe service">
                     <div class="details">
                         <h3>POP-UP CAFE</h3>
                         <p>Bringing the cafe to you! Our Pop-Up Café delivers freshly brewed coffee, artisanal pastries,
@@ -82,8 +82,8 @@
                             gatherings, or any place that needs a caffeine kick with a personal touch.</p>
                     </div>
                 </div>
-                <div class="services-grid-right">
-                    <img src="img/espressobar.webp" alt="">
+                <div class="service-item">
+                    <img src="img/espressobar.webp" alt="Espresso bar service">
                     <div class="details">
                         <h3>ESPRESSO BAR</h3>
                         <p>Elevate your event with our stylish Espresso Bar serving barista-made coffee, espresso
