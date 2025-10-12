@@ -195,6 +195,10 @@
      z-index: 3;
  }
 
+ .navigation.solid{
+    background-image: linear-gradient(white)
+ }
+
  .hero {
      position: relative;
      background-image: url(img/homebg.webp);
